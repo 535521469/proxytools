@@ -1,0 +1,4 @@
+source.51=1
+# source.51.periodDelay uom:second
+source.51.periodDelay=1800
+source.51.poolSize=3
