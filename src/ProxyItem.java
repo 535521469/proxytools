@@ -1,7 +1,6 @@
 import java.util.Date;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
-
 import domain.Proxy;
 
 public class ProxyItem implements Delayed {
@@ -28,4 +27,6 @@ public class ProxyItem implements Delayed {
 				- this.proxy.getValiddatetime().getTime(),
 				TimeUnit.MILLISECONDS);
 	}
+	
+	
 }

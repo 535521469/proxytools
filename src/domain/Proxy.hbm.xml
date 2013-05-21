@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="domain.Proxy" table="HTTPProxy">
+		<id name="seqid" column="SEQID" type="string">
+			<generator class="uuid.hex"></generator>
+		</id>
+
+		<property name="procotol" column="Procotol" type="string" not-null="true"></property>
+		<property name="ip" column="IP" type="string" not-null="true"></property>
+		<property name="port" column="Port" type="int" not-null="true"></property>
+		<property name="validdatetime" column="ValidDateTime" type="date" not-null="false"></property>
+		<property name="validflag" column="ValidFlag" type="string" not-null="true"></property>
+		<property name="fetchdate" column="FetchDate" type="date" not-null="true"></property>
+
+	</class>
+
+</hibernate-mapping>
