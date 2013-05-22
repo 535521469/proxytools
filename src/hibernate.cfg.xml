@@ -7,6 +7,7 @@
 	<session-factory>
 		
 		<property name="connection.url">
+<<<<<<< HEAD
 		jdbc:mysql://42.96.193.84:3306/SecondhandCar_Fundamental
 		</property>
 		<property name="connection.password">taide007</property>
@@ -15,6 +16,11 @@
 <!-- 		jdbc:mysql://192.168.1.101:3306/SecondhandCar_Fundamental -->
 <!-- 		</property> -->
 <!-- 		<property name="connection.password">root</property> -->
+=======
+		jdbc:mysql://192.168.1.101:3306/SecondhandCar_Fundamental
+		</property>
+		<property name="connection.password">root</property>
+>>>>>>> 0ee88e499f13d568164f6c54821595b3481cdf04
 		
 		<property name="connection.driver_class">
 			com.mysql.jdbc.Driver

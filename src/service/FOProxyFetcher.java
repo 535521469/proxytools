@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 0ee88e499f13d568164f6c54821595b3481cdf04
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -34,6 +37,7 @@ public class FOProxyFetcher extends ProxyFetcher {
 
 		Session session = getCurrentSession();
 		Transaction tx = session.beginTransaction();
+<<<<<<< HEAD
 		List ps = session.createCriteria(Proxy.class)
 				.add(Example.create(proxy)).list();
 
@@ -41,6 +45,10 @@ public class FOProxyFetcher extends ProxyFetcher {
 		if (ps.size() > 1) {
 			p = (Proxy) ps.get(0);
 		}
+=======
+		Proxy p = (Proxy) session.createCriteria(Proxy.class)
+				.add(Example.create(proxy)).uniqueResult();
+>>>>>>> 0ee88e499f13d568164f6c54821595b3481cdf04
 		String conquence = CONSEQUENCE_NEW;
 
 		if (p == null) {
