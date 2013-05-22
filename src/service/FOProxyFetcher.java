@@ -6,7 +6,6 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Example;
@@ -41,8 +40,8 @@ public class FOProxyFetcher extends ProxyFetcher {
 		if (ps.size() > 1) {
 			p = (Proxy) ps.get(0);
 		}
-		String conquence = CONSEQUENCE_NEW;
 
+		String conquence = CONSEQUENCE_NEW;
 		if (p == null) {
 			proxy.setValidflag(Proxy.ValidFlagEnum.UNVALID.getCodeByEnum());
 			proxy.setFetchdate(new Date());
