@@ -40,8 +40,8 @@ public class FOProxyFetcher extends ProxyFetcher {
 		if (ps.size() > 1) {
 			p = (Proxy) ps.get(0);
 		}
-
 		String conquence = CONSEQUENCE_NEW;
+
 		if (p == null) {
 			proxy.setValidflag(Proxy.ValidFlagEnum.UNVALID.getCodeByEnum());
 			proxy.setFetchdate(new Date());
